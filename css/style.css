@@ -74,4 +74,30 @@
   font-size: 8vw; /*8 of the total view width*/
   letter-spacing: 0.5rem; /*space between the letters in a word*/
   text-transform: uppercase;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.container .main-section:nth-child(1) {
+  background-color: rgb(161, 26, 26);
+}
+.container .main-section:nth-child(2) {
+  background-color: rgb(42, 161, 26);
+}
+.container .main-section:nth-child(3) {
+  background-color: rgb(26, 96, 161);
+}
+.container .main-section:nth-child(4) {
+  background-color: rgb(161, 152, 26);
+}
+.container .main-section:nth-child(5) {
+  background-color: rgb(145, 26, 161);
+}
+
+/* apply media query to adjust styling for different devices = make it responsive */
+
+@media (max-width: 700px) {
+  .header .navbar a span {
+    display: none; /*hides the menu text and shows only icon up to 700px screen width*/
+  }
 }

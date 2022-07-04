@@ -1,0 +1,77 @@
+/* apply below style to all elements in a page */
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none; /*removes underline from anchor*/
+  text-transform: capitalize; /*makes the first letter to be capital*/
+  overflow: hidden; /*clips off extra text going out of the box*/
+  scroll-behavior: smooth; /*when scrolling should happen it should have smooth effect*/
+}
+/* styling menu section */
+
+.header {
+  position: fixed; /*makes menu fixed when scrolling down the page*/
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  /* background-color: rgb(42, 141, 42); */
+  height: 65px;
+}
+/* styling nav bar */
+
+.header .navbar {
+  display: flex; /*helps move items inside the nav*/
+}
+
+.header .navbar a {
+  flex: 1; /* every anchor tag takes equal space in the row*/
+  z-index: 100; /*header should be always raised like a 3d view*/
+  text-align: center; /*aligns text in a tag to horizontal center*/
+  font-size: 22px;
+  line-height: 65px; /*space between two lines also helps allign items vertically center*/
+  color: aliceblue;
+}
+
+/* apply pseudo selector and change brightness */
+.header .navbar a:hover {
+  filter: brightness(80%);
+}
+
+/* apply different background color on each menu */
+.header .navbar a:nth-child(1) {
+  background-color: rgb(161, 26, 26);
+}
+.header .navbar a:nth-child(2) {
+  background-color: rgb(42, 161, 26);
+}
+.header .navbar a:nth-child(3) {
+  background-color: rgb(26, 96, 161);
+}
+.header .navbar a:nth-child(4) {
+  background-color: rgb(161, 152, 26);
+}
+.header .navbar a:nth-child(5) {
+  background-color: rgb(145, 26, 161);
+}
+
+/* style the main body section */
+.container {
+  display: flex;
+  width: 500%;
+  height: 100vh; /*this will occupy the screen view height*/
+}
+.container .main-section {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  align-items: center; /*align the content vertically center*/
+  justify-content: center; /*align the content horizontally center*/
+  font-size: 8vw; /*8 of the total view width*/
+  letter-spacing: 0.5rem; /*space between the letters in a word*/
+  text-transform: uppercase;
+}
